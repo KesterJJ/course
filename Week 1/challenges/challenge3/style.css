@@ -35,33 +35,6 @@ h2 {
     color: white;
 }
 
-@media screen and (min-width: 1200px) {
-    h2 {
-        font-size: 200px;
-    }
-}
-
-@media screen and (min-width: 1000px) {
-    h2 {
-        font-size: 90px;
-    }
-}
-
-@media screen and (max-width: 900px) {
-    h2 {
-        font-size: 50px;
-    }
-}
-
-@media screen and (max-width: 600px) {
-    h2 {
-        font-size: 40px;
-    }
-
-    a {
-        font-size: 3px;
-    }
-}
 
 #banner {
     width: 100%;
@@ -161,4 +134,39 @@ article {
 
 section {
     width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        font-size: 200px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    h2 {
+        font-size: 90px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    h2 {
+        font-size: 50px;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 40px;
+    }
+
+    a {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    h2 {
+        font-size: 30px;
+    }
 }
