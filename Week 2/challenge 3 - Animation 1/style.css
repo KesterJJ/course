@@ -1,0 +1,62 @@
+body {
+    background: url(img/sonic_and_sally__and_the_jail_of_8_bit__by_classicsonicsatam_d5lhco4.jpg);
+    background-size: cover;
+    overflow: hidden;
+}
+
+#cartoon {
+    background: url(img/image2vector\ \(1\).svg);
+    z-index: 1;
+    position: relative;
+    width: 100px;
+    height: 150px;
+    animation: walking 5s steps(4) infinite, moving 5s linear infinite;
+    top: 320px;
+    left: 500px;
+}
+
+
+@keyframes walking {
+    0% {
+        background-position: 0px 0px;
+    }
+    25% {
+        background-position: 400px 0px;
+    }
+    25.1% {
+        background-position: 0px 300px;
+    }
+    50% {
+        background-position: 400px 300px;
+    }
+   50.1% {
+        background-position: 0px 150px;
+    }
+    75% {
+        background-position: 400px 150px;
+    }
+    75.1% {
+        background-position: 0px 450px;
+    }
+    100% {
+        background-position: 400px 450px;
+    }
+}
+
+@keyframes moving {
+    0% {
+transform: translate(0px, 0px);
+    }
+    25% {
+        transform: translate(0px, 60px);
+    }
+    50% {
+        transform: translate(160px, 60px);
+    }
+    75% {
+        transform: translate(160px, 0px);
+    }
+    100% {
+        transform: translate(0px, 0px);
+    }
+}

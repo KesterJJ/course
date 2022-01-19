@@ -1,0 +1,29 @@
+. {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.-RunRight01 {
+    width: 128px;
+    height: 128px;
+    background-position: -1px -1px;
+}
+
+.-RunRight02 {
+    width: 128px;
+    height: 128px;
+    background-position: -131px -1px;
+}
+
+.-RunRight03 {
+    width: 128px;
+    height: 128px;
+    background-position: -261px -1px;
+}
+
+.-RunRight04 {
+    width: 128px;
+    height: 128px;
+    background-position: -391px -1px;
+}

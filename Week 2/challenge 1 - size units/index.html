@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS units</title>
+<style>
+    html {
+        font-size: 5px;
+    }
+    .container {
+font-size: 5vh;
+text-align: center;
+width: 100%;
+    }
+    #first {
+font-size: 10em;
+    } /*multiple of the size of its default size (usually the font size of the parent element)*/
+    #second {
+        font-size: 10rem;
+    }/*multiple of the size of the font in the root element (html)- default size of html is 16px*/
+    #third {
+        font-size: 5vh;
+    } /*1vh unit is 1/100 of the height of the screen - responsive - vw does the same but for the viewort width*/
+</style>
+
+</head>
+<body>
+    <div class="container">
+<h1 id="first">First heading</h1>
+<h1 id="second">Second heading</h1>
+<h1 id="third">Third heading</h1>
+    </div>
+</body>
+</html>
