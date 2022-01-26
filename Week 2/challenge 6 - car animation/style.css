@@ -136,3 +136,7 @@ transform: rotate(360deg);
     left: 70%;
     animation: wheel1 1s linear infinite;
 }
+
+audio {
+    display: none;
+}
