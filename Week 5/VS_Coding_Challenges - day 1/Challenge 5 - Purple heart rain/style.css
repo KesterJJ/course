@@ -1,0 +1,15 @@
+
+
+.heart {
+position: fixed;
+top: -2vh;
+width: 20px;
+height: 20px; 
+animation: fall 5s linear infinite;
+}
+
+@keyframes fall {
+    to {
+        top: 102vh;
+    }
+} 

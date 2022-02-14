@@ -1,0 +1,293 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;;
+    transition: all 0.5s linear;
+}
+body {
+    width: 100vw;
+    margin: 0%;
+    padding: 0%;
+    height: 100vh;
+    background-color: hsla(374, 100%, 50%, 1);
+}
+
+.bodyone {
+    background-color: /*linear-gradient(0deg, */hsla(0, 0%, 0%, 1)/*, hsla(0, 0%, 5%, 1))*/;
+}
+.bodytwo {
+    background-color: /*linear-gradient(45deg, */hsla(306, 91%, 77%, 1)/*, hsla(306, 91%, 85%, 1))*/;
+}
+.bodytwo #logo {
+    background-color: hsla(306, 90%, 20%, 1);
+}
+.bodytwo h1, .bodytwo h2 {
+    color: hsla(306, 91%, 87%, 1);
+    -webkit-text-stroke: 0.1px hsla(194, 100%, 55%, 1);
+    text-shadow: 3px 3px 0px hsla(61, 100%, 55%, 1);
+}
+.bodytwo header {
+    background-color: hsla(306, 91%, 47%, 1);
+}
+.bodytwo button {
+    background-color: hsla(306, 91%, 87%, 1);
+    color: hsla(306, 90%, 25%, 1);
+    text-shadow: 2px 2px 0px hsla(194, 100%, 55%, 1);
+    -webkit-text-stroke: 0.1px hsla(61, 100%, 55%, 1);
+    border: 2px solid black;
+    border-color: hsla(306, 90%, 25%, 1) hsla(306, 90%, 38%, 1) hsla(306, 90%, 38%, 1) hsla(306, 90%, 25%, 1);
+}
+
+
+.bodythree {
+    background-color: /*linear-gradient(-45deg, */hsla(194, 100%, 55%, 1)/*, hsla(194, 100%, 65%, 1))*/;
+}
+.bodythree #logo {
+    background-color: hsla(194, 100%, 55%, 1);
+}
+.bodythree h1, .bodythree h2 {
+    color: hsla(194, 100%, 26%, 1);
+    -webkit-text-stroke: 0.1px hsla(61, 100%, 55%, 1);
+    text-shadow: 3px 3px 0px hsla(350, 100%, 50%, 1);
+}
+.bodythree header {
+    background-color: hsla(194, 100%, 81%, 1);
+}
+.bodythree button {
+    background-color: hsla(194, 100%, 36%, 1);
+    color: hsla(194, 100%, 81%, 1);
+    text-shadow: 2px 2px 0px hsla(61, 100%, 55%, 1);
+    -webkit-text-stroke: 0.1px hsla(350, 100%, 50%, 1);
+    border: 2px solid black;
+    border-color: hsla(194, 100%, 36%, 1) hsla(194, 100%, 26%, 1) hsla(194, 100%, 26%, 1) hsla(194, 100%, 36%, 1);
+}
+
+
+.bodyfour {
+    background-color: /*linear-gradient(-45deg, */hsla(61, 100%, 55%, 1)/*, hsla(194, 100%, 65%, 1))*/;
+}
+.bodyfour #logo {
+    background-color: hsla(61, 100%, 36%, 1);
+}
+.bodyfour h1, .bodyfour h2 {
+    color: hsla(61, 100%, 75%, 1);
+    -webkit-text-stroke: 0.1px hsla(350, 100%, 50%, 1);
+    text-shadow: 3px 3px 0px hsla(122, 99%, 57%, 1);
+}
+.bodyfour header {
+    background-color: hsla(61, 100%, 44%, 1);
+}
+.bodyfour button {
+    background-color: hsla(61, 100%, 75%, 1);
+    color: hsla(61, 100%, 36%, 1);
+    text-shadow: 2px 2px 0px hsla(350, 100%, 50%, 1);
+    -webkit-text-stroke: 0.1px hsla(122, 99%, 57%, 1);
+    border: 2px solid black;
+    border-color: hsla(61, 100%, 36%, 1) hsla(61, 100%, 55%, 1) hsla(61, 100%, 55%, 1) hsla(61, 100%, 36%, 1);
+}
+
+
+.bodyfive {
+    background-color: /*linear-gradient(-45deg, */hsla(355, 100%, 55%, 1)/*, hsla(194, 100%, 65%, 1))*/;
+}
+.bodyfive #logo {
+    background-color: hsla(360, 100%, 55%, 1);
+}
+.bodyfive h1, .bodyfive h2 {
+    color: hsla(360, 100%, 34%, 1);
+    -webkit-text-stroke: 0.1px hsla(122, 99%, 57%, 1);
+    text-shadow: 3px 3px 0px rgb(180, 0, 204);
+}
+.bodyfive header {
+    background-color: hsla(360, 100%, 79%, 1);
+}
+.bodyfive button {
+    background-color: hsla(360, 100%, 34%, 1);
+    color: hsla(11, 100%, 69%, 1);
+    text-shadow: 2px 2px 0px hsla(122, 99%, 57%, 1);
+    -webkit-text-stroke: 0.1px rgb(180, 0, 204);
+    border: 2px solid black;
+    border-color: hsla(360, 100%, 44%, 1) hsla(360, 100%, 24%, 1) hsla(360, 100%, 24%, 1) hsla(360, 100%, 44%, 1);
+}
+
+
+
+.bodysix {
+    background-color: /*linear-gradient(-45deg, */hsla(120, 100%, 42%, 1)/*, hsla(194, 100%, 65%, 1))*/;
+}
+
+.bodysix #logo {
+    background-color: hsla(120, 100%, 42%, 1);
+}
+.bodysix h1, .bodysix h2 {
+    color: hsla(120, 100%, 80%, 1);
+    -webkit-text-stroke: 0.1px rgb(180, 0, 204);
+    text-shadow: 3px 3px 0px black;
+}
+.bodysix header {
+    background-color: hsla(120, 94%, 40%, 1);
+}
+.bodysix button {
+    background-color: hsla(120, 100%, 80%, 1);
+    color: hsla(120, 94%, 25%, 1);
+    text-shadow: 2px 2px 0px rgb(180, 0, 204);;
+    -webkit-text-stroke: 0.1px black;
+    border: 2px solid black;
+    border-color: hsla(120, 100%, 42%, 1) hsla(120, 100%, 42%, 1) hsla(120, 100%, 42%, 1) hsla(120, 100%, 42%, 1);
+}
+
+.bodyseven {
+    background-color: /*linear-gradient(-45deg, */rgb(180, 0, 204)/*, hsla(194, 100%, 65%, 1))*/;
+}
+
+header {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: hsla(0, 0%, 40%, 100%);
+    z-index: 2;
+}
+
+#logo {
+    width: 13vh;
+    height: 13vh;
+    background-color: hsla(0, 100%, 100%, 1);
+    margin-left: 1vh;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 5px 5px 5px;
+    text-shadow: 0px 0px 0px hsla(0, 0, 0, 0);
+}
+#logo h1 {
+    padding: 0%;
+    margin: 0%;
+    font-size: 8vh;
+    font-weight: 900;
+    transform: scaleX(1.2);
+}
+#logo h2 {
+    margin: 0%;
+    padding: 0%;
+    font-size: 3vh;
+    position: relative;
+    bottom: 2vh;
+    font-weight: 900;
+}
+
+nav {
+    width: 40vw;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+nav button {
+    border-radius: 15px;
+    height: 35px;
+    width: 80px;
+    font-size: 16px;
+    font-weight: 900;
+    box-shadow: 4px 4px 4px;
+}
+
+#container {
+width: 100%;
+height: 100%;
+scroll-snap-type: y mandatory;
+overflow-y: scroll;
+}
+
+
+section {
+    width: 100%;
+    height: 100vh;
+    scroll-snap-align: start;
+}
+
+#one {
+    background-color: hsla(0, 0%, 0%, 1);
+    z-index: -3;
+    position: relative;
+}
+#one video {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: -2;
+}
+
+#oneDiv {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 100%, 1);
+    background-color: hsla(0, 0%, 0%, 1);
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    mix-blend-mode: multiply;
+}
+
+
+#heading {
+    font-size: 20vh;
+    letter-spacing: 1vw;
+    font-weight: lighter;
+    font-weight: 100;
+    font-style: normal;
+    font-size: 96px;
+    line-height: 182.17px;
+    letter-spacing: 1vh;
+    transform: scaleY();
+    background-color: black;
+}
+
+#heading2 {
+    letter-spacing:2vh;
+    text-decoration: underline;
+    transform: scaleX(2.1);
+    font-weight: 100;
+    font-style: normal;
+    font-size:11vh;
+    line-height: 100.17px;
+    background-color: hsla(0, 0%, 0%, 1);
+}
+
+
+.active {
+    color: black;
+    background-color: white;
+}
+
+
+.flake {
+position: fixed;
+top: -2vh;
+height: auto;
+}
+
+@keyframes fall {
+    to {
+        top: 102vh;
+    }
+} 
+
+@keyframes rotate {
+    to {
+        transform: rotate3d(0, 0, 0, 0deg);
+    }
+}
+
+

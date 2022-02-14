@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Form validation</h1>
+    <form action="#" name="form" onsubmit="return validateForm()" target="_self">
+<div class="formdesign" id="name">
+    <input type="name" name="name" id="name" placeholder="Name" required>
+    <b><span class="formerror"></span></b>
+</div>
+<div class="formdesign" id="email">
+    <input type="email" name="email" id="email" placeholder="Email" required>
+    <b><span class="formerror"></span></b>
+</div>
+<div class="formdesign" id="number">
+    <input type="number" name="number" id="number" placeholder="Phone number" required>
+    <b><span class="formerror"></span></b>
+</div>
+<div class="formdesign" id="password">
+    <input type="password" name="password" id="password" placeholder="Password" required>
+    <b><span class="formerror"></span></b>
+</div>
+<div class="formdesign" id="confirmpassword">
+    <input type="password" name="confirmpassword" id="confirmpassword" placeholder="Confirm password" required>
+    <b><span class="formerror"></span></b>
+</div>
+<div class="formdesign" id="checkbox">
+   I confirm the above details are correct <input type="checkbox" name="checkbox" id="checkbox" placeholder="I confirm the above details are correct" required>
+   <b><span class="formerror"></span></b>
+</div>
+<div class="formdesign" id="submit">
+    <input type="submit" value="submit" name="submit" id="submit" placeholder="submit">
+</div>
+
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
