@@ -11,13 +11,20 @@ const seven = document.querySelector("#seven");
 const heading = document.getElementById("heading");
 const heading2 = document.getElementById("heading2");
 const oneDiv = document.getElementById("oneDiv");
+const rotators = document.querySelectorAll(".rotator");
 let snowInterval = 0;
 
-/*inverse = () => {
-heading.classList.toggle("active");
-heading2.classList.toggle("active");
-oneDiv.classList.toggle("active");
-}*/
+inverse = () => {
+//heading.classList.toggle("active");
+//heading2.classList.toggle("active");
+//oneDiv.classList.toggle("active");
+//oneDiv.style.mixBlendMode = "lighten";
+heading.style.color = "black";
+heading.style.backgroundColor = "white";
+oneDiv.style.backgroundColor = "white";
+heading2.style.color = "black";
+heading2.style.backgroundColor = "white";
+}
 
 
 
@@ -39,8 +46,11 @@ const observer = new IntersectionObserver (function (entries, observer) {
         
         if (entry.target == three) {
             snow();
+            enterBubbles();
         } else {
            clearInterval(snowInterval);
+           snowInterval = 0;
+           hideBubbles();
         }
         
     })
@@ -83,4 +93,28 @@ createFlake = () => {
     
     snow = () => {
    snowInterval = setInterval(createFlake, 300);
+    }
+
+        let bubble = [];
+
+    enterBubbles = () => {
+      for (let i = 0; i < bubble.length; i++) {
+          let bub = bubble[i];
+          three.appendChild(bub);
+          rotators[i].style.top = 120vh;
+      }
+    }
+
+    hideBubbles = () => {
+
+        for (let i = 0; i < rotators.length; i++) {
+            rotators[i].style.top = "-50vh";
+            removeBubble = () => {bubble.push(three.removeChild(rotators[i]))}
+            setTimeout(removeBubble, 5000);
+        }
+       /* rotators.forEach(element => {
+            element.style.top = "-50vh";
+            removeBubble = () => {three.removeChild(element)};
+            setTimeout(removeBubble, 5000);
+        })*/
     }
