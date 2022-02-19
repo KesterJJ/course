@@ -11,14 +11,56 @@ const seven = document.querySelector("#seven");
 const heading = document.getElementById("heading");
 const heading2 = document.getElementById("heading2");
 const oneDiv = document.getElementById("oneDiv");
-const rotators = document.querySelectorAll(".rotator");
 let snowInterval = 0;
+let allBubbles = [];
+let rectangle0 = document.createElement("div");
+let rectangle1 = document.createElement("div");
+let rectangle2 = document.createElement("div");
+rectangle0.id = "rectangle0";
+rectangle1.id = "rectangle1";
+rectangle2.id = "rectangle2";
+const aboutHead = document.createElement("h3");
+let about = document.createElement("p");
+aboutHead.innerHTML = "ABOUT";
+about.innerHTML = "Developer, designer, and problem solver."
+rectangle2.appendChild(aboutHead);
+rectangle2.appendChild(about);
+//adds content for rectangles
+rectangle0.innerHTML = `<div style="height: 50%; width: 100%"></div><div style="height: 50%; width: 100%;"><h3>Languages/Frameworks/Libraries</h3><ul><li>HTML</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li><li>JSON</li><li>NodeJS</li><li>React.JS</li><li>PHP</li><li>SQL</li></ul></div>`;
+rectangle1.innerHTML = `<div style="height: 50%; width: 100%"></div><div style="height: 50%; width: 100%;"><h3>Skills</h3><ul><li>csdonc</li><li>CSS</li><li>Bootstrap</li><li>JavaScript</li><li>JSON</li><li>NodeJS</li><li>React.JS</li><li>PHP</li><li>SQL</li></ul></div>`;
 
+//creates rotators for bubbles
+for (let i = 0; i < 6; i++) {
+    let outer = document.createElement("div");
+    outer.classList.add("rotator");
+    outer.id = `rotator${i}`;
+    let mid = document.createElement("div");
+    mid.id = `bubble${i}`;
+    mid.appendChild(document.createElement("div"));
+    outer.appendChild(mid);
+    allBubbles.push(outer);
+}
+
+let allTriangles = [];
+
+for (let i = 0; i < 4; i++) {
+    let outer = document.createElement("div");
+    outer.id = `triangle${i}Border`;
+    let inner = document.createElement("div");
+    inner.id = `triangle${i}`;
+    outer.appendChild(inner);
+    allTriangles.push(outer);
+}
+
+
+
+
+function randomise (max, min) {
+    return Math.floor(Math.random() * (max - min) + min);
+ }
+
+ //changes title page
 inverse = () => {
-//heading.classList.toggle("active");
-//heading2.classList.toggle("active");
-//oneDiv.classList.toggle("active");
-//oneDiv.style.mixBlendMode = "lighten";
 heading.style.color = "black";
 heading.style.backgroundColor = "white";
 oneDiv.style.backgroundColor = "white";
@@ -27,46 +69,49 @@ heading2.style.backgroundColor = "white";
 }
 
 
-
+//Takes actions based on scroll section
 let options = {
     root: null,
     threshold: 0.2,
-    rootMargin: "-150px 0px -150px 0px"
+    rootMargin: "-50px 0px -50px 0px"
 };
-
-
-
 const observer = new IntersectionObserver (function (entries, observer) {
     entries.forEach(entry => {
         if (!entry.isIntersecting) {
             return;
-        }
+        } 
         body.classList.remove(`${body.classList[1]}`);
         body.classList.add(`body${entry.target.id}`);
-        
-        if (entry.target == three) {
-            snow();
+        if (entry.target == one) {
+            clearInterval(snowInterval);
+            snowInterval = 0;
+            hideRectangles();
+        } else if (entry.target == two) {
+            clearInterval(snowInterval);
+            snowInterval = 0;
+            enterRectangles();
+        } else if (entry.target == three) {
+            hideRectangles();
             enterBubbles();
-        } else {
+            snow();
+        } else if (entry.target == four) {
            clearInterval(snowInterval);
            snowInterval = 0;
            hideBubbles();
+        } else if (entry.target == five) {
+        } else if (entry.target == six) {
+            enterTriangles();
         }
-        
     })
 }, options);
-
-
 sections.forEach(section => {
     observer.observe(section);
 });
 
 
 
-function randomise (max, min) {
-   return Math.floor(Math.random() * (max - min) + min);
-}
 
+//makes snow
 createFlake = () => {
     const flake = document.createElement("div");
     let flakeNo = randomise(5, 1);
@@ -86,35 +131,62 @@ createFlake = () => {
     flake.style.transform = `rotate3d(${rotation}, ${rotation2}, ${rotation3}, 360deg)`;
     flake.style.animation = `fall ${fallSpeed}s linear 1, rotate ${fallSpeed}s linear infinite`;
     body.appendChild(flake);
-    
     flake.style.left = Math.floor(Math.random() * 100) + "vw";
     setTimeout(function() {body.removeChild(flake);}, 11000);
     }
-    
-    snow = () => {
-   snowInterval = setInterval(createFlake, 300);
+   snow = () => {
+    snowInterval = setInterval(createFlake, 300);
+   }
+
+//page 2 effects
+    enterRectangles = () => {
+        hideBubbles();
+        rectangle0.style.animation = "rect0 0.5s ease-in 0.5s 1 both";
+        rectangle1.style.animation = "rect1 0.5s ease-in 0.5s 1 both";
+        rectangle2.style.animation = "rect2 0.5s ease-in 1s 1 both";
+        two.appendChild(rectangle0);
+        two.appendChild(rectangle1);
+        two.appendChild(rectangle2);
     }
-
-        let bubble = [];
-
-    enterBubbles = () => {
-      for (let i = 0; i < bubble.length; i++) {
-          let bub = bubble[i];
-          three.appendChild(bub);
-          rotators[i].style.top = 120vh;
-      }
-    }
-
-    hideBubbles = () => {
-
-        for (let i = 0; i < rotators.length; i++) {
-            rotators[i].style.top = "-50vh";
-            removeBubble = () => {bubble.push(three.removeChild(rotators[i]))}
-            setTimeout(removeBubble, 5000);
+    hideRectangles = () => {
+        rectangle0.style.animation = "rect0Out 0.5s ease-in 0.5s 1 both";
+        rectangle1.style.animation = "rect1Out 0.5s ease-in 0.5s 1 both";
+        rectangle2.style.animation = "rect2Out 0.5s ease-in 0s 1 both";
+       removeRect = () => {
+            rectangle0.remove();
+            rectangle1.remove();
+            rectangle2.remove();
         }
-       /* rotators.forEach(element => {
-            element.style.top = "-50vh";
-            removeBubble = () => {three.removeChild(element)};
-            setTimeout(removeBubble, 5000);
-        })*/
+          setTimeout(removeRect, 1000);
     }
+
+
+       
+//page 3 effects
+    enterBubbles = () => {
+      for (let i = 0; i < allBubbles.length; i++) {
+          let bub = allBubbles[i];
+          three.appendChild(bub);
+          let floatLength = randomise(4, 15);
+          bub.style.animation = `riseIn 0.5s ease-out 1s 1 both, float ${floatLength}s linear infinite`;
+          let bubble = document.getElementById(`bubble${i}`);
+          bubble.style.animation = `antifloat ${floatLength}s linear infinite`;
+      }
+        bub4 = document.getElementById("bubble4");
+      bub4.innerHTML = "<div>Click the bubbles!</div>"
+    }
+    hideBubbles = () => {
+        rotator = document.querySelectorAll(".rotator");
+        for (let i = 0; i < rotator.length; i++) {
+            rotator[i].style.animation = "riseOut 0.5s ease-in 1 forwards";
+            removeBubble = () => {three.removeChild(rotator[i])}
+          setTimeout(removeBubble, 500);
+       }
+    }
+
+    enterTriangles = () => {
+        for (let i = 0; i < allTriangles.length; i++) {
+            let tri = allTriangles[i];
+            six.appendChild(tri);
+        }
+      }
