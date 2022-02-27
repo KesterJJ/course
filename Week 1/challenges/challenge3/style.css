@@ -39,19 +39,23 @@ h2 {
 #banner {
     width: 100%;
     height: auto;
-    top: 100px;
+    top: -150px;
     margin-top: 100px;
+    position: absolute;
+    overflow: hidden;
 }
 
 nav {
 background-color: lightgray;
 width: 100%;
-position: sticky;
+position: absolute;
+top:550px;
 z-index: 3;
-top: 100px;
 }
 
 #navBar {
+    position: sticky;
+    top: 100px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
