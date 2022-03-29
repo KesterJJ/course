@@ -5,91 +5,190 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kester Jones Designs</title>
+    <meta name="description" content="Web Designer and Developer. Freelancer in London.">
+    <meta name="keywords" content="HTML, CSS, Javascript, web designer, Developer, Freelancer">
+    <title>Kester Jones Web Developer & Designer</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo-black.png">
+
 </head>
 
 <body id="body">
     <div id="bg"></div>
-    <div id="container" onscroll="inverse()">
-        <!-- <header>-->
-        <div id="logo">
-            <h1>KJ</h1>
-            <h2>DESIGNS</h2>
-        </div>
-        <nav>
-            <a href="#one">Top</a>
-            <a href="#two">About</a>
-            <a href="#three">Features</a>
-            <a href="#four">Websites</a>
-            <a href="#five">Features</a>
-            <a href="#six">Contact</a>
-            <a href="#seven">WebApps</a>
+    <div id="container">
+        <!-- <h1>KJ</h1>-->
+        <nav id="nav" class="navClose">
+            <div id="menu" onclick="toggleMenu()">
+                <div class="line uncross1" id="line1"></div>
+                <div class="line uncross2" id="line2"></div>
+                <div class="line uncross3" id="line3"></div>
+                <div/>
         </nav>
-        <!--  </header>-->
 
         <section id="one">
-            <video src="img/video.mp4" type="video_1/mp4" autoplay loop muted></video>
-            <div id="oneDiv">
-                <h1 id="heading">KESTER JONES</h1>
-                <h2 id="heading2">DESIGNS</h2>
-            </div>
+            <video id="dye" src="img/video.mp4" type="video_1/mp4" autoplay loop muted></video>
+            <a href="#one" id="homeLink">
+                <div id="oneDiv">
+                    <img id="logo" src="img/logo-white.png">
+                </div>
+            </a>
         </section>
         <section id="two"></section>
         <section id="three"></section>
-        <section id="four">
-            <div>
-                <figure>
-                    <img src="img/mario.png" alt="mario website">
-                    <figcaption>Mario Club website</figcaption>
-                </figure>
-                <div>
-                    <h3>The Challenge</h3>
-                    <p>Lorem ipdolor sit amet consectetumlit. Voluptas ipsum adipisci illo provident facere aperiam
-                        similique natus tempore! Repellendus commodi voluptates veritatis iste excepturi possimus porro
-                        sint magnam libero quisquam.</p>
-                </div>
-                <div>
-                    <h3>The Process</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisilis voluptatum obcaecati doloribus cumque
-                        consectetur earum odio labore. Omnis reprehenderit rem magnam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae suscipit officiis molestias consectetur culpa distinctio, maiores amet impedit nemo quos temporibus neque, eaque sint earum, labore necessitatibus omnis quasi quas?</p>
-                </div>
-            </div>
-        </section>
-        <section id="five">
-            <div>
-                <video src="img/guard-animation.mp4" autoplay muted loop></video>
-            </div>
-            <div>
-                <div>
-                    <h3>ANIMATIONS</h3>
-                    <h4>The Challenge:</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente et eaque deserunt error quasi
-                        aut
-                        obcaecati hic maiores ab ratione quo, numquam blanditiis, itaque minima fugiat asperiores
-                        consequatur est suscipit!</p>
+        <div id="timeShift">
+            <section id="four">
+                <div class="projectBox">
+                    <figure>
+                        <img src="img/mario.png" alt="mario website">
+                        <figcaption>Mario Club website</figcaption>
+                    </figure>
                     <div>
-                        <h4>The solution:</h4>
-                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus itaque quos perspiciatis
-                            impedit
-                            veniam nam aut. Necessitatibus sapiente perspiciatis excepturi. In numquam, nostrum rerum
-                            facere
-                            dolor nesciunt totam error placeat! Lorem ipsum dolor, sit amet consectetur adipisicing
-                            elit. Quia reiciendis quaerat eos voluptate earum! Libero, eum ut? Ad, numquam, minus
-                            laborum culpa excepturi exercitationem temporibus dolor, quia odit magni fugit.</p>
+                        <h3>The Challenge</h3>
+                        <p>Lorem ipdolor sit amet consectetumlit. Voluptas ipsum adipisci illo provident facere
+                            aperiam
+                            similique natus tempore! Repellendus commodi voluptates veritatis iste excepturi
+                            possimus
+                            porro
+                            sint magnam libero quisquam.</p>
+                    </div>
+                    <div>
+                        <h3>The Process</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisilis voluptatum obcaecati doloribus cumque
+                            consectetur earum odio labore. Omnis reprehenderit rem magnam. Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Repudiandae suscipit officiis molestias consectetur culpa
+                            distinctio, maiores amet impedit nemo quos temporibus neque, eaque sint earum, labore
+                            necessitatibus omnis quasi quas?</p>
                     </div>
                 </div>
-            </div>
-            <div>
-                <video src="img/car.mp4" autoplay muted loop></video>
+            </section>
+            <section id="evening">
+                <div class="projectBox">
+                    <figure>
+                        <img src="img/Landing page.png" alt="mario website">
+                        <figcaption>Mario Club website</figcaption>
+                    </figure>
+                    <div>
+                        <h3>The Challenge</h3>
+                        <p>Lorem ipdolor sit amet consectetumlit. Voluptas ipsum adipisci illo provident facere
+                            aperiam
+                            similique natus tempore! Repellendus commodi voluptates veritatis iste excepturi
+                            possimus
+                            porro
+                            sint magnam libero quisquam.</p>
+                    </div>
+                    <div>
+                        <h3>The Process</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisilis voluptatum obcaecati doloribus cumque
+                            consectetur earum odio labore. Omnis reprehenderit rem magnam. Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Repudiandae suscipit officiis molestias consectetur culpa
+                            distinctio, maiores amet impedit nemo quos temporibus neque, eaque sint earum, labore
+                            necessitatibus omnis quasi quas?</p>
+                    </div>
+                </div>
+            </section>
+            <section id="night">
+                <div class="projectBox">
+                    <figure>
+                        <img src="img/Bootstrap-home.png" alt="mario website">
+                        <figcaption>Mario Club website</figcaption>
+                    </figure>
+                    <div>
+                        <h3>The Challenge</h3>
+                        <p>Lorem ipdolor sit amet consectetumlit. Voluptas ipsum adipisci illo provident facere
+                            aperiam
+                            similique natus tempore! Repellendus commodi voluptates veritatis iste excepturi
+                            possimus
+                            porro
+                            sint magnam libero quisquam.</p>
+                    </div>
+                    <div>
+                        <h3>The Process</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisilis voluptatum obcaecati doloribus cumque
+                            consectetur earum odio labore. Omnis reprehenderit rem magnam. Lorem ipsum dolor sit
+                            amet
+                            consectetur adipisicing elit. Repudiandae suscipit officiis molestias consectetur culpa
+                            distinctio, maiores amet impedit nemo quos temporibus neque, eaque sint earum, labore
+                            necessitatibus omnis quasi quas?</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <section id="five">
+            <div class="fiveBox">
+                <div class="animation-box">
+                    <video src="img/guard-animation.mp4" autoplay muted loop></video>
+                </div>
+                <div>
+                    <div>
+                        <h3>The Challenge:</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente et eaque deserunt error
+                            quasi
+                            aut
+                            obcaecati hic maiores ab ratione quo, numquam blanditiis, itaque minima fugiat asperiores
+                            consequatur est suscipit!</p>
+                        <div>
+                            <h3>The solution:</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minus itaque quos perspiciatis
+                                impedit
+                                veniam nam aut. Necessitatibus sapiente perspiciatis excepturi. In numquam, nostrum
+                                rerum
+                                facere
+                                dolor nesciunt totam error placeat! Lorem ipsum dolor, sit amet consectetur adipisicing
+                                elit. Quia reiciendis quaerat eos voluptate earum! Libero, eum ut? Ad, numquam, minus
+                                laborum culpa excepturi exercitationem temporibus dolor, quia odit magni fugit.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="animation-box">
+                    <video src="img/car.mp4" autoplay muted loop></video>
+                </div>
             </div>
         </section>
         <section id="six"></section>
-        <section id="seven"></section>
+        <section id="seven">
+            <div id="cubeDiv"></div>
+            <form name="form" onsubmit="sendEmail(); return false" target="_self" id="form" method="post">
+                <h3>CONTACT</h3>
+                <label for="name" id="nameLabel" class="label">
+                    <input type="name" name="name" id="name" placeholder="  Name" required>
+                    <b><span class="formerror"></span></b>
+                </label>
+                <label for="email" id="emailLabel" class="label">
+                    <input type="email" name="email" id="email" placeholder="  Email" required>
+                    <b><span class="formerror"></span></b>
+                </label>
+                <label for="number" id="numberLabel" class="label">
+                    <input type="number" name="number" id="number" placeholder="  Phone number" required>
+                    <b><span class="formerror"></span></b>
+                </label>
+                <label for="subject" id="subjectLabel" class="label">
+                    <input type="text" name="subject" id="subject" placeholder="  Subject" required>
+                    <b><span class="formerror"></span></b>
+                </label>
+                <label for="message" id="messageLabel" class="label">
+                    <textarea rows="8" cols="40" style="overflow:hidden;resize:none;" name="message" id="message"
+                        placeholder="  Message" required></textarea>
+                    <b><span class="formerror"></span></b>
+                </label>
+                <label for="submit" id="submitLabel" class="label">
+                    <input type="submit" value="Submit" name="submit" id="submit" />
+                </label>
+
+            </form>
+        </section>
     </div>
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("PiLWEOIMlnpLyoNQo");
+        })();
+    </script>
     <script src="script.js"></script>
 </body>
 

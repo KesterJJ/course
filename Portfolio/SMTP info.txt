@@ -1,0 +1,7 @@
+Username: enquries.kesterjones@gmail.com
+
+Password: 9649EB5FA488BE97771294E5B25F2826986C
+
+Server: smtp.elasticemail.com
+
+Port: 2525
